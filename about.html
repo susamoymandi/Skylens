@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · Skylens</title>
+  <link rel="stylesheet" href="skylens.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap container">
+      <div class="brand"><span>🌤️</span><span>Skylens</span><span class="badge">About</span></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <!-- <a class="active" href="about.html">About</a> -->
+        <!-- <a href="contact.html">Contact</a> -->
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="card pad">
+      <h2 style="margin:0 0 10px">About Skylens</h2>
+      <p class="p">Skylens is a minimal weather app that focuses on clarity. We fetch reliable data from public APIs and show only what matters—temperature, humidity, and wind—so anyone can check the day’s weather in seconds.</p>
+      <p class="p">Whether you’re a student, commuter, traveler, or just planning a morning run, Skylens keeps it simple, fast, and privacy-friendly.</p>
+      <hr class="sep">
+      <p class="small">Built with love and clean UI. ✨</p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>© <span id="yr"></span> Skylens · <a href="privacy.html">Privacy</a></div>
+  </footer>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>

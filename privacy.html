@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · Skylens</title>
+  <link rel="stylesheet" href="skylens.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap container">
+      <div class="brand"><span>🌤️</span><span>Skylens</span><span class="badge">Privacy</span></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <!-- <a href="contact.html">Contact</a> -->
+        <!-- <a class="active" href="privacy.html">Privacy</a> -->
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="card pad">
+      <h2 style="margin:0 0 10px">Privacy Policy</h2>
+      <p>At <strong>Skylens</strong> (<em>https://skylens.likesyou.org/</em>), we respect your privacy.</p>
+      <h3>Information We Collect</h3>
+      <ul class="list">
+        <li>Non-personal usage data (e.g., browser type, access time) that may be collected by hosting analytics.</li>
+        <li>Weather data fetched from public APIs (e.g., Open-Meteo). This data is not about you as a person.</li>
+        <li>If you contact us, we receive the info you submit (name/message/email).</li>
+      </ul>
+
+      <h3>Location</h3>
+      <p>With your permission, the app may use your device location to show local weather. Location data is used only to fetch the forecast and is not stored by us.</p>
+
+      <h3>Cookies</h3>
+      <p>We may use minimal cookies to improve experience. You can disable cookies in your browser settings.</p>
+
+      <h3>Third-Party Links</h3>
+      <p>Skylens may link to external sites. We are not responsible for their content or policies.</p>
+
+      <h3>Ads</h3>
+      <p>We may display ads via third-party networks (e.g., Google AdSense). These providers may use cookies to serve relevant ads. Check their policies for details.</p>
+
+      <h3>Changes</h3>
+      <p>We may update this policy; changes will be posted on this page with an updated date.</p>
+
+      <h3>Contact</h3>
+      <h3>Contact</h3>
+<p>Questions? Visit my <a href="https://www.linkedin.com/in/susamoymandi/" target="_blank" rel="noopener noreferrer">LinkedIn</a> profile.</p>
+      <!-- Or email us at: YOUR_EMAIL_HERE@example.com -->
+      </p>
+
+      <p class="small">Last updated: <span id="dt"></span></p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>© <span id="yr"></span> Skylens · <a href="privacy.html">Privacy</a></div>
+  </footer>
+  <script>
+    document.getElementById('yr').textContent=new Date().getFullYear();
+    document.getElementById('dt').textContent=new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>

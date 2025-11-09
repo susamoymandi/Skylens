@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skylens - Live Weather Updates</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="SkylensLogo.png" type="image/x-icon">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+    <a href="index.html">
+        <img src="Skylens.png" class="logo" alt="Skylens Logo">
+    </a>
+      <!-- <h1>Weather Forecast</h1> -->
+      <div class="searchbar">
+        <input id="q" type="text" placeholder="Search city, district, or place (e.g., Kolkata, Darjeeling, Siliguri)" autocomplete="off" />
+        <button id="useLocation" title="Use my location">Use my location</button>
+        <div class="suggestions" id="suggestions"></div>
+      </div>
+      <div id="status" class="muted"></div>
+    </header>
+
+    <section class="row">
+      <article class="card" id="currentCard">
+        <h2 id="place">No place selected</h2>
+        <div id="currentWrap" style="display:none">
+          <div class="big" id="temp">--°</div>
+          <div class="muted" id="desc">—</div>
+          <div class="meta" style="margin-top:12px">
+            <div class="kv"><div class="k">Feels like</div><div class="v" id="feels">—</div></div>
+            <div class="kv"><div class="k">Humidity</div><div class="v" id="hum">—</div></div>
+            <div class="kv"><div class="k">Wind</div><div class="v" id="wind">—</div></div>
+            <div class="kv"><div class="k">Precipitation</div><div class="v" id="precip">—</div></div>
+          </div>
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>Details</h2>
+        <div class="kv"><div class="k">Latitude, Longitude</div><div class="v" id="latlon">—</div></div>
+        <div style="height:8px"></div>
+        <div class="kv"><div class="k">Timezone</div><div class="v" id="tz">—</div></div>
+        <div style="height:8px"></div>
+        <!-- <div class="kv"><div class="k">Data source</div><div class="v"><span class="tag">Open‑Meteo</span></div></div> -->
+      </aside>
+    </section>
+
+    <section class="card" style="margin-top:14px">
+      <h2>7‑day forecast</h2>
+      <div id="forecast" class="grid"></div>
+    </section>
+
+    <!-- <div class="footer">No API key needed. Data: <span class="tag">Open‑Meteo Forecast & Geocoding</span>. Units are metric by default.</div> -->
+  </div>
+
+  <!-- Footer part -->
+  <section class="guidance-section">
+    <h1>We love to keep you updated.</h1>
+    <p>Made with ❤️ by Susamoy Mandi</p>
+    <div class="button-group">
+      <a href="about.html" class="btn" aria-label="About us">
+        <span>🌤️</span>About Skylens
+      </a>
+      <a href="privacy.html" class="btn" aria-label="Privacy Policy">
+        <span>🔒</span>Privacy Policy
+      </a>
+      <a href="https://www.linkedin.com/in/susamoymandi/" class="btn" aria-label="Chat with us">
+        <span>📩</span>Contact Me
+      </a>
+      <a href="https://upi.me/pay?pa=susamoymandi@okicici&pn=SusamoyMandi&am=30&cu=INR" class="btn" aria-label="Call us">
+        <span>☕</span>Buy Me A Coffee
+      </a>
+    </div>
+  </section>
+
+  
+
+  <!-- <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Our offerings</h4>
+        <ul>
+          <li>Mobile</li>
+          <li>Home</li>
+          <li>Business</li>
+          <li>Apps</li>
+          <li>Devices</li>
+          <li>5G Network</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li class="explore-support">Explore Support</li>
+          <li>Locate us</li>
+          <li>FAQ</li>
+          <li>Track order</li>
+          <li>Contact us</li>
+          <li>Do not disturb</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Our company</h4>
+        <ul>
+          <li>About us</li>
+          <li>Reliance Industries</li>
+          <li>Reliance Foundation</li>
+          <li>JioLife</li>
+          <li>Careers</li>
+          <li>Investor relations</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Useful links</h4>
+        <ul>
+          <li>Get JioHome</li>
+          <li>Get Jio SIM</li>
+          <li>Matching number</li>
+          <li>Recharge</li>
+          <li>Pay Bills</li>
+          <li>Login</li>
+          <li>Jio Customer Associates</li>
+          <li>Coverage map</li>
+          <li>Sitemap</li>
+        </ul>
+      </div>
+    </div> -->
+
+
+  
+<script src="logic.js"></script>
+</body>
+</html>
